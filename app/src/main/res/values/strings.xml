@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Deimos</string>
+    <string name="call_emergency_title">Emergency Call</string>
+    <string name="contacts_title">Contacts</string>
+    <string name="maps_title">Maps</string>
+    <string name="emergency_title">Emergency</string>
+    <string name="help_title">Help</string>
+    <string name="legal_title">Legal</string>
+    <string name="call_emergency_number">911</string>
+</resources>

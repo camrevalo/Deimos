@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.percent.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.carevaloe.deimos.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/app_name"
+        android:id="@+id/appTitle"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#5ca3dc" />
+
+    <Button
+        app:layout_widthPercent="50%"
+        app:layout_heightPercent="25%"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/callEmergencyButton"
+        android:layout_below="@+id/appTitle"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="@string/call_emergency_title"
+        android:textAlignment="gravity"
+        android:gravity="bottom|left"
+        android:onClick="callEmergency_button_click" />
+
+    <Button
+        app:layout_widthPercent="50%"
+        app:layout_heightPercent="25%"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/contacts_title"
+        android:textAlignment="gravity"
+        android:gravity="bottom|left"
+        android:id="@+id/contactsButton"
+        android:layout_below="@+id/appTitle"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="contacts_button_click" />
+
+    <Button
+        app:layout_widthPercent="50%"
+        app:layout_heightPercent="25%"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/maps_title"
+        android:textAlignment="gravity"
+        android:gravity="bottom|left"
+        android:id="@+id/mapButton"
+        android:layout_below="@+id/callEmergencyButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="map_button_click" />
+
+    <Button
+        app:layout_widthPercent="25%"
+        app:layout_heightPercent="12.5%"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/facebookButton"
+        android:layout_below="@+id/contactsButton"
+        android:layout_alignBottom="@+id/lockButton"
+        android:layout_toRightOf="@+id/mapButton"
+        android:layout_toEndOf="@+id/mapButton"
+        android:onClick="facebook_button_click" />
+
+    <Button
+        app:layout_widthPercent="25%"
+        app:layout_heightPercent="12.5%"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lockButton"
+        android:layout_below="@+id/contactsButton"
+        android:layout_toRightOf="@+id/facebookButton"
+        android:layout_toEndOf="@+id/facebookButton"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="lock_button_click" />
+
+    <Button
+        app:layout_widthPercent="50%"
+        app:layout_heightPercent="12.5%"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/messageButton"
+        android:layout_below="@+id/lockButton"
+        android:layout_toRightOf="@+id/mapButton"
+        android:layout_toEndOf="@+id/mapButton"
+        android:layout_alignRight="@+id/lockButton"
+        android:layout_alignEnd="@+id/lockButton"
+        android:onClick="message_button_click" />
+
+    <Button
+        app:layout_widthPercent="100%"
+        app:layout_heightPercent="25%"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/emergency_title"
+        android:textAlignment="gravity"
+        android:gravity="bottom|left"
+        android:id="@+id/emergencyButton"
+        android:layout_below="@+id/messageButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="emergency_button_click" />
+
+    <Button
+        app:layout_widthPercent="50%"
+        app:layout_heightPercent="25%"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/help_title"
+        android:textAlignment="gravity"
+        android:gravity="bottom|left"
+        android:id="@+id/helpButton"
+        android:layout_below="@+id/emergencyButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="help_button_click" />
+
+    <Button
+        app:layout_widthPercent="50%"
+        app:layout_heightPercent="25%"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/legal_title"
+        android:textAlignment="gravity"
+        android:gravity="bottom|left"
+        android:id="@+id/legalButton"
+        android:layout_toRightOf="@+id/helpButton"
+        android:layout_toEndOf="@+id/helpButton"
+        android:layout_below="@+id/emergencyButton"
+        android:layout_alignBottom="@+id/helpButton"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="legal_button_click" />
+
+</android.support.percent.PercentRelativeLayout>
